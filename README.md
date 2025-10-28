@@ -31,21 +31,27 @@ Payment Method	     -       Mode of payment used
 ⚙️ SQL Tasks 
 
 🅰️ Extract Month and Year
+
 Used STRFTIME() (SQLite) / EXTRACT() (PostgreSQL) / MONTH() (MySQL) to extract month and year from the date column.
 
 🅱️ Group by Year and Month
+
 Grouped transactions by month and year to prepare for monthly aggregation.
 
 🅲 Calculate Monthly Revenue
+
 Used SUM(total_revenue) to compute total monthly sales.
 
 🅳 Count Distinct Orders
+
 Used COUNT(DISTINCT transaction_id) to calculate monthly order volume.
 
 🅴 Sort Results
+
 Sorted aggregated results using ORDER BY year, month.
 
 🅵 Filter by Specific Time Period
+
 Used WHERE and LIMIT clauses to focus on a specific year (e.g., 2024).
 
 🧠 Insights & Conclusion
